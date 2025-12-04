@@ -2,17 +2,21 @@
 
 setlocal
 
-set EXE=main
-set PDB=main
+set NAME=main
+set EXE=%NAME%
+set PDB=%NAME%
+set SRC=%NAME%
 
-set OPT=-debug
+set OPT=
+set DEBUG=-debug
 set STYLE=
 if "%~2"=="-release" (
     set OPT=-o:speed
+    set DEBUG=
     set STYLE=-strict-style -vet 
 )
 
-odin build main.odin -file %STYLE% %OPT% -out:%EXE%.exe -pdb-name:%PDB%.pdb
+odin build %SRC%.odin -file %OPT% %DEBUG% %STYLE% -out:%EXE%.exe -pdb-name:%PDB%.pdb
 if %ERRORLEVEL% neq 0 exit /b 1
 
 set ODIN_PATH=
