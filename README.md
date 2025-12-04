@@ -1,11 +1,9 @@
 ## graphics-odin
-It works on Windows only.
 
+### Run
 ```sh
-cd paint-circles
-
 # debug build
-build.bat run
+odin run <Directory-Name> -debug
 # release build
-build.bat run -release
+odin run <Directory-Name> -strict-style -vet -o:speed
 ```
