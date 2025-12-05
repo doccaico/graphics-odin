@@ -41,7 +41,7 @@ main :: proc() {
 		rl.DrawLine(SCREEN_WIDTH / 2, 0, SCREEN_WIDTH / 2, SCREEN_HEIGHT, rl.RED)
 		rl.DrawCircle(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2, 15, rl.BLACK)
 		rl.DrawCircle(i32(x), i32(y), 20, rl.BLUE)
-		rl.DrawText("Scroll the mouse to change the speed", 200, 0, 20, rl.BLACK);
+		rl.DrawText("Scroll the mouse to change the speed", 200, 0, 20, rl.BLACK)
 
 		rl.EndDrawing()
 	}
