@@ -107,7 +107,7 @@ main :: proc() {
 		//
 
 		rl.BeginDrawing()
-		rl.ClearBackground(rl.RAYWHITE)
+		rl.ClearBackground(CLEAR_COLOR)
 
 		// particle
 		for i := 0; i < queue.len(particle_queue); i += 1 {
