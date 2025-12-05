@@ -25,8 +25,8 @@ main :: proc() {
 		// Update
 		//
 
-		x :f32 = SCREEN_WIDTH / 2 + radius * math.cos_f32(degree * rl.DEG2RAD)
-		y :f32 = SCREEN_HEIGHT / 2 + radius * math.sin_f32(degree * rl.DEG2RAD)
+		x :f32 = SCREEN_WIDTH / 2 + radius * math.cos(degree * rl.DEG2RAD)
+		y :f32 = SCREEN_HEIGHT / 2 + radius * math.sin(degree * rl.DEG2RAD)
 		speed += rl.GetMouseWheelMove()
 		degree = 0.0 if degree >= 360.0 else degree + speed
 
