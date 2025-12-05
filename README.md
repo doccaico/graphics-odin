@@ -2,8 +2,8 @@
 
 ### Run
 ```sh
-# debug build
+# Debug
 odin run <Directory-Name> -debug
-# release build
+# Release
 odin run <Directory-Name> -strict-style -vet -o:speed
 ```
